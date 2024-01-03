@@ -1,0 +1,218 @@
+:root {
+  --primary: hsla(197, 100%, 23%, 0.698);
+  --secondary: hsla(245, 100%, 48%, 0.65);
+
+}
+
+.split-screen {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 80%;
+  background: white;
+  background-size: cover;
+  position: relative;
+}
+
+.left {
+  height: 100%;
+  display: flex;
+  background: linear-gradient(135deg, var(--primary), var(--secondary)), url('img/clinic.jpg');
+  background-size: cover;
+  justify-content: center;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left .text {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.left .text h1 {
+  font-size: 33px;
+  margin-bottom: 23px;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+}
+
+.left .text h2 {
+  font-size:18px;
+  font-weight:410;
+  margin-bottom: 8px;
+}
+
+.left .text h3 {
+  font-size: 14.5px;
+  font-weight: 350;
+}
+
+.left .text p {
+  font-weight: 350px;
+  font-size: 14px;
+  margin-bottom: 23px;
+}
+
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  padding-top: 40px;
+}
+
+.right form {
+  width: 100%;
+}
+
+.booking-form {
+  margin-top: 35px;
+  text-align: center;
+}
+
+.input-field {
+  max-width: 380px;
+  background-color: #ffffff;
+  height: 55px;
+  border-radius: 55px;
+  display: grid;
+  grid-template-columns: 15% 85%;
+  padding: 0 0.4rem;
+  position: relative;
+  box-shadow:   0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 7.5px 8px rgba(0, 0, 0, 0.06);
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 50%;
+  margin-bottom: 23px;
+}
+
+.input-field i {
+  text-align: center;
+  line-height: 55px;
+  color: #acacac;
+  transition: 0.5s;
+  font-size: 1.3rem;
+}
+
+.input-field input {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #524141;
+  font-family: 'Poppins', sans-serif;
+}
+
+.input-field select {
+  background: none;
+  outline: none;
+  border: none;
+  line-height: 1;
+  font-weight: 600;
+  font-size: 1rem;
+  color: #524141;
+  font-family: 'Poppins', sans-serif;
+  margin-right: 20px;
+}
+
+.input-field input::placeholder {
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+.btn-book {
+  width: 150px;
+  background-color:#08b162;
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+  box-shadow:   0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 7.5px 8px rgba(0, 0, 0, 0.06);
+  margin-top: 5px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.btn-book:hover {
+  background-color:#008145;
+  box-shadow:   0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 7.5px 8px rgba(0, 0, 0, 0.06);
+}
+
+::-webkit-datetime-edit-text, 
+::-webkit-datetime-edit-month-field, 
+::-webkit-datetime-edit-day-field, 
+::-webkit-datetime-edit-year-field {
+  color: rgb(107, 98, 98);
+}
+
+::-webkit-calendar-picker-indicator {
+    margin-right: 20px;
+}
+
+@media screen and (min-width: 980px) {
+  .split-screen {
+      flex-direction: row;
+      height: 86.5vh;
+  }
+  .left {
+      display: flex;
+      width: 50%;
+      height: auto;
+  }
+  .right {
+      display: flex;
+      width: 50%;
+      height: auto;
+  }
+}
+
+
+.table .thead th{
+  font-weight: 300;
+
+  color: white;
+}
+
+
+.btn-appoint {
+  width: 70px;
+  background-color:#08b162;
+  border: none;
+  outline: none;
+  height: 25px;
+  border-radius: 13px;
+  color: #fff;
+  font-weight: 320;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 15px;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+.btn-appoint:hover {
+  background-color:#008145;
+  border: 1px solid rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 980px) {
+  #footer { display: none; }
+}
