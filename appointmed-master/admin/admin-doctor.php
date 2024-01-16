@@ -57,6 +57,7 @@
                     <tr>
                         <th>ID</th>
                         <th>Name </th>
+                        <th>Name </th>
                         <th>Field</th>
                         <th>Email </th>
                         <th>Password</th>
